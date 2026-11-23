@@ -1,0 +1,197 @@
+strategy_id,variation_id,label,changed,trades,hit_rate,avg_r_before_costs,avg_r_after_costs,publishable
+200-ema-bounce,target-1r,Target 1x risk,"{""target_r"": 1.0}",2376,0.4444444444444444,-0.10584362256004883,-0.6238325450208029,true
+200-ema-bounce,target-3r,Target 3x risk,"{""target_r"": 3.0}",2376,0.2356902356902357,-0.01625522061789705,-0.5463134704367665,true
+200-ema-bounce,min-stop-5atr,Skip touches with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",641,0.31201248049922,-0.005443990289419224,-0.12970045304900935,true
+200-ema-bounce,min-stop-10atr,Skip touches with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",177,0.2655367231638418,-0.05631576274669663,-0.12324773126128329,true
+200-ema-bounce,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",1438,0.3191933240611961,-0.024604650714630173,-0.5454052971830928,true
+200-ema-bounce,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",11419,0.2924949645327962,-0.10738440658509303,-1.5131149493861462,true
+200-ema-bounce,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",750,0.32266666666666666,0.011046021446203674,-0.24102390772510454,true
+200-ema-bounce,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",146,0.2808219178082192,0.01242466527621995,-0.06276375900947453,true
+200-ema-bounce,ema-50,50 EMA instead of 200,"{""ema_length"": 50}",4184,0.30401529636711283,-0.07608371615780764,-0.6895234663845767,true
+200-ema-bounce,confirm-candle,Touch candle must close in the trade's direction,"{""confirm"": true}",571,0.3274956217162872,0.024963967106634496,-0.18400512748706796,true
+200-ema-bounce,stop-buffer-10atr,Stop 10% of the typical daily move beyond the touch candle,"{""stop_buffer_atr"": 0.1}",2349,0.23243933588761176,-0.010844726889857565,-0.07983550226855649,true
+200-ema-bounce,trend-20,"20 candles clear of the line before the touch, not 10","{""trend_candles"": 20}",1562,0.31562099871959026,-0.0378160123648298,-0.5457376641054085,true
+asian-range-breakout,target-1r,Target 1x risk (about one range width),"{""target_r"": 1.0}",1091,0.17048579285059579,0.03747327154886793,0.01707471358762147,true
+asian-range-breakout,target-3r,Target 3x risk,"{""target_r"": 3.0}",1091,0.008249312557286892,0.038763292988504346,0.017706441493541416,true
+asian-range-breakout,min-stop-5atr,Skip setups with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",1080,0.041666666666666664,0.04381325165662929,0.022902648138799265,true
+asian-range-breakout,min-stop-10atr,Skip setups with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",1080,0.041666666666666664,0.04381325165662929,0.022902648138799265,true
+asian-range-breakout,trend-1h-200ema,Only place the order on the side of the 1-hour 200 EMA trend,"{""trend_filter"": true}",653,0.05359877488514548,0.0733479601395683,0.0525518819441926,true
+asian-range-breakout,stop-mid,Stop at the middle of the Asian range,"{""stop"": ""mid""}",1091,0.13748854262144822,0.02562246168286975,-0.013488090583441163,true
+asian-range-breakout,buffer-0,Orders exactly at the range high and low (no buffer),"{""buffer_usd"": 0.0}",1136,0.04401408450704225,0.04886600429083056,0.026881936287957552,true
+asian-range-breakout,buffer-10pips,Orders $1 (10 pips) beyond the range,"{""buffer_usd"": 1.0}",1047,0.03629417382999045,0.03057658082849246,0.010783358767104715,true
+asian-range-breakout,range-00-07,Asian range 00:00 to 07:00 UTC,"{""session"": ""00-07""}",1188,0.02356902356902357,0.007087302198283318,-0.01580420263507589,true
+asian-range-breakout,range-23-03,Asian range 23:00 to 03:00 UTC,"{""session"": ""23-03""}",1323,0.030990173847316706,0.031077677826967527,0.002462637532952309,true
+asian-range-breakout,tf-1m,1-minute candles (48-minute time limit),"{""timeframe_minutes"": 1}",1091,0.002749770852428964,0.02769113079732914,0.006607102413344769,true
+asian-range-breakout,tf-15m,15-minute candles (12-hour time limit),"{""timeframe_minutes"": 15}",1092,0.11813186813186813,0.0511221841057462,0.03055890963543584,true
+bollinger-band-bounce,target-1r,Target 1x risk,"{""target_r"": 1.0}",21967,0.46515227386534347,-0.06330010190283336,-0.5657796095671562,true
+bollinger-band-bounce,target-3r,Target 3x risk,"{""target_r"": 3.0}",21967,0.22961715300223062,-0.006794901299195759,-0.5200905199219006,true
+bollinger-band-bounce,min-stop-5atr,Skip bounces with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",8594,0.3068419827786828,-0.004590775584656122,-0.12068882173875913,true
+bollinger-band-bounce,min-stop-10atr,Skip bounces with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",2701,0.2665679378008145,-0.029253684978719267,-0.09677278993106135,true
+bollinger-band-bounce,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",10382,0.31718358697746096,-0.010912098516682246,-0.5250808521635509,true
+bollinger-band-bounce,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",106225,0.29702047540597787,-0.08420881207703267,-1.3792235971116977,true
+bollinger-band-bounce,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",7525,0.3029900332225914,-0.03486711505334201,-0.31803597301727343,true
+bollinger-band-bounce,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",1697,0.29640542133176195,-0.003102792328463004,-0.16738811220457375,true
+bollinger-band-bounce,touch-entry,Trade a wick through the band that closes back inside (one candle),"{""trigger"": ""touch""}",55129,0.31624009142193765,-0.036249831102627146,-0.49029165521506934,true
+bollinger-band-bounce,std-2.5,Bands at 2.5 standard deviations instead of 2,"{""num_std"": 2.5}",8456,0.3156338694418165,-0.015473445727119891,-0.7117516558737078,true
+bollinger-band-bounce,confirm-candle,Back-inside candle must close in the trade's direction,"{""confirm"": true}",20054,0.31814101924803034,-0.011193428449029848,-0.3694039703913375,true
+bollinger-band-bounce,stop-buffer-10atr,Stop 10% of the typical daily move beyond the outside candle,"{""stop_buffer_atr"": 0.1}",22546,0.20016854430941186,-0.008576919704000418,-0.07530414986212244,true
+bollinger-band-bounce,time-limit-8,Close after 8 candles (40 minutes) instead of 48,"{""timeout_candles"": 8}",21966,0.2446508240007284,-0.02482591029647236,-0.5358779085562752,true
+break-and-retest,target-1r,Target 1x risk,"{""target_r"": 1.0}",11011,0.4559985469076378,-0.08602192726172414,-0.5603000579098976,true
+break-and-retest,target-3r,Target 3x risk,"{""target_r"": 3.0}",11011,0.23685405503587323,-0.023410834630723715,-0.5114496560688371,true
+break-and-retest,min-stop-5atr,Skip stops under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",2612,0.31623277182235837,-0.010780510403063624,-0.13993405814295445,true
+break-and-retest,min-stop-10atr,Skip stops under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",540,0.2962962962962963,0.02811274584907188,-0.04151277396007501,true
+break-and-retest,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",5760,0.3173611111111111,-0.03608381878288079,-0.5040045182665566,true
+break-and-retest,min-break-half-candle,Break must close half an average candle past the level,"{""min_break_atr"": 0.5}",3224,0.30924317617866004,-0.06297063822912838,-0.6142585340310364,true
+break-and-retest,retest-24,Wait up to 24 candles for the retest,"{""retest_candles"": 24}",11536,0.3161407766990291,-0.04011955220763753,-0.5246596615216995,true
+break-and-retest,swing-5,Swings need 5 candles each side,"{""swing_candles"": 5}",7279,0.313641983788982,-0.04658137546756258,-0.547485377259836,true
+break-and-retest,entry-limit,"Limit order at the level, no wait for the retest to hold","{""order"": ""limit""}",22713,0.31396116761326115,-0.04463253428187169,-0.5247308828095341,true
+break-and-retest,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",52142,0.29454182808484525,-0.10979846568203819,-1.3617727835818136,true
+break-and-retest,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",3439,0.32073277115440535,-0.016289554595161227,-0.2827843646443684,true
+break-and-retest,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",689,0.2844702467343977,-0.060020560091587266,-0.17137809855694827,true
+engulfing-candle,target-1r,Target 1x risk,"{""target_r"": 1.0}",33316,0.48901428742946335,-0.013952455026806036,-0.22120207312731874,true
+engulfing-candle,target-3r,Target 3x risk,"{""target_r"": 3.0}",33316,0.22235562492496097,0.008914582140128085,-0.2076542833598369,true
+engulfing-candle,min-stop-5atr,Skip setups with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",17842,0.30254455778500167,-0.015392890408719499,-0.13732693284153738,true
+engulfing-candle,min-stop-10atr,Skip setups with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",4964,0.28283642224012895,0.021489954838046218,-0.0502801792401837,true
+engulfing-candle,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",15407,0.3235542285973908,0.01854895712781369,-0.19642722394570156,true
+engulfing-candle,no-prior-trend,No prior trend needed (any engulfing pair),"{""trend_rule"": ""none""}",55944,0.31921206921206924,-0.0010313072571851323,-0.21990024355579754,true
+engulfing-candle,prior-trend-ema10,Shorter prior trend: first candle beyond its 10 EMA,"{""trend_rule"": ""ema10""}",35338,0.3180428999943404,-6.20849048099917e-05,-0.21296105875371038,true
+engulfing-candle,engulf-wicks,Engulfing candle must also cover the first candle's wicks,"{""engulf"": ""wicks""}",9312,0.313573883161512,-0.014089359896249416,-0.22503241182309996,true
+engulfing-candle,confirm-next,Wait for the next candle to close beyond the engulfing close,"{""confirm"": true}",16286,0.2866879528429326,-0.0030661393576846474,-0.1444213334014124,true
+engulfing-candle,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",154863,0.32459657891168325,0.006173589240707418,-0.5151687882430043,true
+engulfing-candle,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",11099,0.30507252905667176,-0.01944359922018189,-0.13642354297324932,true
+engulfing-candle,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",2733,0.29747530186608123,0.007818801104557361,-0.04698584804385408,true
+fvg-textbook,target-1r,Target 1x risk,"{""target_r"": 1.0}",66676,0.4864418981342612,-0.01755533745421747,-0.216044228755659,true
+fvg-textbook,target-1.5r,Target 1.5x risk,"{""target_r"": 1.5}",66676,0.38405123282740417,-0.013910272437576287,-0.21583677658598124,true
+fvg-textbook,target-3r,Target 3x risk,"{""target_r"": 3.0}",66676,0.21674965504829324,-0.012694023457779568,-0.22030020253747964,true
+fvg-textbook,entry-near,Enter at the gap's near edge,"{""entry"": ""near""}",70689,0.3028335384571857,-0.008787332137374058,-0.18382646604580366,true
+fvg-textbook,entry-far,Enter at the gap's far edge,"{""entry"": ""far""}",62893,0.3199402159222807,-0.00922837400656363,-0.2617475288897638,true
+fvg-textbook,min-stop-5atr,Skip gaps with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",36010,0.3021382949180783,-0.011860869731650864,-0.1343201648464118,true
+fvg-textbook,min-stop-10atr,Skip gaps with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",9415,0.26903876792352627,-0.001010323862028326,-0.0728177437003815,true
+fvg-textbook,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",33855,0.31501993797075767,-0.004982470131349626,-0.20812085617247547,true
+fvg-textbook,fill-1h,Order live for 1 hour,"{""expiry_minutes"": 60}",60255,0.31308605095012865,-0.011534695072573818,-0.21507347569259444,true
+fvg-textbook,fill-4h,Order live for 4 hours,"{""expiry_minutes"": 240}",71169,0.31283283452064803,-0.009161061191676256,-0.21295011444366468,true
+fvg-textbook,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",448100,0.3040972997098862,-0.06136416158992148,-0.6159694218797179,true
+fvg-textbook,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",17025,0.30549192364170336,-0.006476961063316269,-0.11782795487725925,true
+fvg-textbook,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",2297,0.3060513713539399,0.002111081280646444,-0.04871240991097758,true
+fibonacci-retracement,target-1r,Target 1x risk (back to the swing high),"{""target_r"": 1.0}",16478,0.4751790265808957,-0.016544531967291068,-0.15831458254474326,true
+fibonacci-retracement,target-3r,Target 3x risk (the 152.8% extension),"{""target_r"": 3.0}",16478,0.18643039203786868,-0.02638051748113129,-0.1751993393040553,true
+fibonacci-retracement,min-stop-5atr,Skip legs with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",12210,0.2773136773136773,-0.014554972586727694,-0.12378218062103345,true
+fibonacci-retracement,min-stop-10atr,Skip legs with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",4452,0.23539982030548068,-0.010354977094386812,-0.07879393840023098,true
+fibonacci-retracement,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",8392,0.2893231649189704,-0.010433534018905424,-0.15452344174884267,true
+fibonacci-retracement,entry-50,Enter at the 50% level,"{""entry_level"": 0.5}",11592,0.2288647342995169,-0.020019473390774395,-0.11760233415140016,true
+fibonacci-retracement,entry-382,Enter at the 38.2% level,"{""entry_level"": 0.382}",6298,0.1583042235630359,0.0012551917702226332,-0.06601594401148046,true
+fibonacci-retracement,entry-786,Enter at the 78.6% level,"{""entry_level"": 0.786}",21714,0.3244450584876117,-0.014515728821392475,-0.3196263389821733,true
+fibonacci-retracement,stop-786,Stop at the 78.6% level instead of the swing,"{""stop_level"": 0.786}",16480,0.3156553398058252,-0.04519714921222351,-0.3771884689564793,true
+fibonacci-retracement,swing-5,Swings need 5 candles each side,"{""swing_candles"": 5}",8769,0.25852434713194206,-0.02235072000406142,-0.13753126827084705,true
+fibonacci-retracement,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",117391,0.28808852467395285,-0.03233615319847184,-0.38133179021322927,true
+fibonacci-retracement,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",3347,0.30206154765461607,0.030288367947632063,-0.052399119215273994,true
+fibonacci-retracement,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",175,0.2571428571428571,-0.14546969563032558,-0.18659214432727395,true
+ichimoku-cloud,target-1r,Target 1x risk,"{""target_r"": 1.0}",9601,0.4637016977398188,-0.022217488332657093,-0.2647462184842944,true
+ichimoku-cloud,target-3r,Target 3x risk,"{""target_r"": 3.0}",9601,0.18737631496719093,0.021870795110033127,-0.22761538602403764,true
+ichimoku-cloud,min-stop-5atr,Skip setups with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",7069,0.26750601216579434,0.0019359766669969647,-0.09623218534930905,true
+ichimoku-cloud,min-stop-10atr,Skip setups with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",3476,0.22554660529344073,-0.01638995222669806,-0.08247163070982406,true
+ichimoku-cloud,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",4702,0.2834963845172267,-0.005389460378127951,-0.26545230342268306,true
+ichimoku-cloud,no-chikou,No Chikou confirmation,"{""confirm_chikou"": false}",10372,0.28210566910914,-0.009743105096627302,-0.2742314317066719,true
+ichimoku-cloud,future-cloud,"Cloud ahead must agree (green for longs, red for shorts)","{""future_cloud"": true}",5875,0.2847659574468085,-0.005733424496325113,-0.3168882680394219,true
+ichimoku-cloud,stop-cloud,Stop at the far side of the cloud instead of the Kijun,"{""stop_rule"": ""cloud""}",10229,0.27832632710919936,0.02977928284786543,-0.1509668769721863,true
+ichimoku-cloud,settings-20-60-120-30,"Slower settings 20, 60, 120, 30","{""settings"": ""20-60-120-30""}",5427,0.25188870462502305,0.0064815591643339505,-0.24843652701501226,true
+ichimoku-cloud,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",51188,0.27656872704540125,-0.025236805246969266,-0.5604953962150557,true
+ichimoku-cloud,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",3091,0.2743448722096409,-0.030974120117354988,-0.13681892556924471,true
+ichimoku-cloud,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",727,0.3012379642365887,0.10492719733429051,0.06283470516571601,true
+ict-silver-bullet,target-1r,Target 1x risk,"{""target_r"": 1.0}",274,0.4854014598540146,0.0999520490351893,0.03782321199482974,true
+ict-silver-bullet,target-3r,Target 3x risk,"{""target_r"": 3.0}",274,0.10218978102189781,0.11618397355732424,0.050114595500534355,true
+ict-silver-bullet,min-stop-5atr,Skip setups with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",269,0.26022304832713755,0.1521100356529262,0.0896066010638778,true
+ict-silver-bullet,min-stop-10atr,Skip setups with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",226,0.24778761061946902,0.17345253450812362,0.11882356332871195,true
+ict-silver-bullet,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",138,0.30434782608695654,0.22461300482435187,0.15926148483564634,true
+ict-silver-bullet,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",543,0.2504604051565378,-0.004397851788972603,-0.13222991178864804,true
+ict-silver-bullet,entry-near,Enter at the gap's near edge,"{""entry"": ""near""}",336,0.21726190476190477,0.14748774770063836,0.09028560345434286,true
+ict-silver-bullet,stop-candle1,"Stop beyond the gap's first candle, not the swing","{""stop"": ""candle1""}",274,0.2956204379562044,0.10402215657968157,0.019690688933939576,true
+ict-silver-bullet,no-sweep,No sweep needed: any gap in the window,"{""need_sweep"": false}",711,0.22925457102672292,-0.047352962478723275,-0.11779980029913278,true
+ict-silver-bullet,window-london,London window: 03:00 to 04:00 New York time,"{""window_start_hour"": 3}",366,0.3005464480874317,0.007413071228632908,-0.11402451097880252,true
+ict-silver-bullet,window-pm,Afternoon window: 14:00 to 15:00 New York time,"{""window_start_hour"": 14}",79,0.31645569620253167,0.24404631812183322,0.1134434939759663,true
+ict-silver-bullet,fill-1h,"Order live 1 hour, even past 11:00","{""fill_in_window"": false}",380,0.2394736842105263,0.09967128595164446,0.03351004635575953,true
+inside-bar-breakout,target-1r,Target 1x risk,"{""target_r"": 1.0}",37198,0.4685735792246895,-0.012152484551356058,-0.12776892779051957,true
+inside-bar-breakout,target-3r,Target 3x risk,"{""target_r"": 3.0}",37198,0.16877251465132534,-0.006905490496673868,-0.12852500191642557,true
+inside-bar-breakout,min-stop-5atr,Skip setups with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",31569,0.2636447147518135,-0.009378911994497285,-0.1081983776704697,true
+inside-bar-breakout,min-stop-10atr,Skip setups with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",14917,0.22222967084534423,-0.013768313087638016,-0.07885243934709514,true
+inside-bar-breakout,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",18985,0.27632341322096393,0.009626431848684391,-0.10857924807606721,true
+inside-bar-breakout,stop-mother-mid,Stop at the middle of the mother bar,"{""stop_rule"": ""mother_mid""}",37197,0.31187999032180014,-0.016412626781827835,-0.21750703061120827,true
+inside-bar-breakout,stop-inside,Stop at the other side of the inside bar,"{""stop_rule"": ""inside""}",37198,0.29208559599978495,-0.01601303999573798,-0.16557515556502325,true
+inside-bar-breakout,break-inside,"Enter on a close beyond the inside bar, not the mother bar","{""break_level"": ""inside""}",43505,0.29378232387081943,-0.004376322979860399,-0.15273551755012044,true
+inside-bar-breakout,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",188928,0.287913914295393,-0.010922847696882778,-0.29981914839709456,true
+inside-bar-breakout,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",12310,0.2619008935824533,-0.011434937059078937,-0.07609901486466314,true
+inside-bar-breakout,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",2984,0.25,-0.016408620056769945,-0.04485034908131754,true
+inside-bar-breakout,tf-4h,4-hour candles,"{""timeframe_minutes"": 240}",877,0.29418472063854045,0.12576571486699056,0.11242742856091885,true
+liquidity-sweep,target-1r,Target 1x risk,"{""target_r"": 1.0}",552,0.4329710144927536,-0.1276359542223103,-0.48054041628796335,true
+liquidity-sweep,target-1.5r,Target 1.5x risk,"{""target_r"": 1.5}",552,0.35688405797101447,-0.09464778647953209,-0.45050859464739845,true
+liquidity-sweep,target-3r,Target 3x risk,"{""target_r"": 3.0}",552,0.19746376811594202,-0.08848119600318316,-0.450749230826718,true
+liquidity-sweep,min-stop-5atr,Skip sweeps with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",287,0.27526132404181186,-0.096255894174874,-0.20406627485631268,true
+liquidity-sweep,min-stop-10atr,Skip sweeps with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",118,0.23728813559322035,-0.1152148839967768,-0.17709051212162452,true
+liquidity-sweep,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",173,0.27167630057803466,-0.13698992701367857,-0.4487389730688504,true
+liquidity-sweep,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",493,0.2799188640973631,-0.08804774519789131,-0.8061967407238698,true
+liquidity-sweep,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",560,0.2875,-0.08640177380928071,-0.2792456040339685,true
+liquidity-sweep,level-session,Previous session's high and low instead of previous day's,"{""level"": ""session""}",2557,0.31521314039890497,-0.030021185827804567,-0.4287403614861588,true
+liquidity-sweep,every-sweep,"Every sweep of the level, not only the first push","{""first_only"": false}",4445,0.30663667041619797,-0.056629730332465815,-0.4711629134151484,true
+liquidity-sweep,entry-level,"Limit order back at the swept level, live 2 hours","{""entry"": ""level""}",487,0.2546201232032854,-0.23613963039014374,-2.61145808263149,true
+liquidity-sweep,london-ny,Only setups during London and New York hours,"{""sessions"": ""london_ny""}",275,0.3054545454545455,-0.018303764719824693,-0.2961184934889356,true
+london-breakout,target-1r,Target 1x risk,"{""target_r"": 1.0}",895,0.10949720670391061,-0.0068332776820024576,-0.030160213531437732,true
+london-breakout,target-3r,Target 3x risk,"{""target_r"": 3.0}",895,0.0022346368715083797,-0.014192924313560893,-0.038018621237931184,true
+london-breakout,stop-mid,Stop at the middle of the Asian range,"{""stop"": ""mid""}",895,0.0893854748603352,-0.05535231684278784,-0.09944644944738912,true
+london-breakout,range-size-filter,Skip days whose Asian range is under 25% or over 80% of the typical daily move,"{""range_atr_filter"": true}",747,0.01606425702811245,0.0034467124742060293,-0.019921545191923514,true
+london-breakout,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",522,0.01532567049808429,-0.003500826711940145,-0.026754358988946493,true
+london-breakout,london-clock,Follow London's clock (one hour earlier in UTC in British summer time),"{""clock"": ""london""}",958,0.014613778705636743,0.003483988646467964,-0.02123270023414431,true
+london-breakout,window-1h,Breakouts count only in London's first hour,"{""expiry_minutes"": 60}",538,0.0055762081784386614,-0.010694155676292652,-0.03519736429813622,true
+london-breakout,window-5h,Breakouts count for London's first 5 hours,"{""expiry_minutes"": 300}",1062,0.02071563088512241,-0.003456780425249028,-0.026747206644075493,true
+london-breakout,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",958,0.0,-0.008931359521685622,-0.03337152916501362,true
+london-breakout,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",825,0.12121212121212122,0.005411645082056917,-0.017050715598278476,true
+macd-crossover,target-1r,Target 1x risk,"{""target_r"": 1.0}",30414,0.45114092194384164,-0.00475332721138271,-0.10729234428792625,true
+macd-crossover,target-3r,Target 3x risk,"{""target_r"": 3.0}",30414,0.14223712763858748,0.002183088498303094,-0.10575605698144588,true
+macd-crossover,min-stop-5atr,Skip setups with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",26880,0.23065476190476192,-0.004885974724650302,-0.09059956174464993,true
+macd-crossover,min-stop-10atr,Skip setups with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",16642,0.19366662660737893,6.377837678130881e-05,-0.06076205049214762,true
+macd-crossover,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",14626,0.23909476275126487,0.014249739587637117,-0.08906088119468394,true
+macd-crossover,zero-trend,"Longs only above the zero line, shorts only below","{""zero_filter"": ""trend""}",11254,0.22703038919495291,-0.012593573429252268,-0.10544914660096874,true
+macd-crossover,zero-reversal,"Longs only below the zero line, shorts only above","{""zero_filter"": ""reversal""}",19160,0.2501043841336117,0.0028563620246259266,-0.11104630397236562,true
+macd-crossover,stop-last10,Stop at the low (high) of the last 10 candles,"{""stop_rule"": ""last10""}",30413,0.24029198040311708,-0.006748578095277726,-0.1089261417577784,true
+macd-crossover,settings-5-35-5,"Faster MACD settings 5, 35, 5","{""settings"": ""5-35-5""}",53256,0.2820715036803365,-0.002287029412376072,-0.14070238793974177,true
+macd-crossover,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",155563,0.25299074972840585,0.00039125986357262533,-0.25643495353940843,true
+macd-crossover,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",9711,0.24199361548759138,0.008743749245596998,-0.04862698258505067,true
+macd-crossover,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",2338,0.23781009409751924,0.033080788992295766,0.007065393721544866,true
+order-block,target-1r,Target 1x risk,"{""target_r"": 1.0}",18818,0.48055053672016157,-0.0338213889851696,-0.27937471506964706,true
+order-block,target-3r,Target 3x risk,"{""target_r"": 3.0}",18818,0.22877032628334573,-0.020070641781401444,-0.2761442074558102,true
+order-block,min-stop-5atr,Skip blocks with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",7300,0.3113698630136986,-0.011212541896058982,-0.14180757649504663,true
+order-block,min-stop-10atr,Skip blocks with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",1390,0.2884892086330935,0.015318392864587409,-0.059746162931748774,true
+order-block,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",9711,0.31438574812068787,-0.03369663671739851,-0.28467291309816145,true
+order-block,entry-mid,Enter at the block's middle (the 50% level),"{""entry"": ""mid""}",17094,0.3115128115128115,-0.06363706750126591,-0.5784964807615508,true
+order-block,entry-body,Enter at the block's body edge (its open),"{""entry"": ""body""}",18348,0.31485720514497495,-0.0424347921327902,-0.48040180147159167,true
+order-block,with-fvg,The move must leave a fair value gap,"{""require_gap"": true}",7179,0.3195431118540187,-0.009716832739681108,-0.26012557429508887,true
+order-block,swing-5,Swings need 5 candles each side,"{""swing_candles"": 5}",11696,0.3119870041039672,-0.03933367291326808,-0.2896588255362686,true
+order-block,fill-4h,Order live for 4 hours,"{""expiry_minutes"": 240}",20550,0.318978102189781,-0.016869670465301814,-0.26958443103039215,true
+order-block,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",117596,0.30478077485628763,-0.07488718470673114,-0.7880308901027293,true
+order-block,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",4638,0.30961621388529537,-0.026895811549590438,-0.16133954654110938,true
+order-block,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",544,0.2922794117647059,-0.0303816322649516,-0.09163757540710589,true
+rsi-divergence,target-1r,Target 1x risk,"{""target_r"": 1.0}",3552,0.39555180180180183,-0.024602520362864415,-0.08866739949348205,true
+rsi-divergence,target-3r,Target 3x risk,"{""target_r"": 3.0}",3552,0.08896396396396396,-0.02037835344264979,-0.08795559152299752,true
+rsi-divergence,min-stop-5atr,Skip setups with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",3477,0.17371297095197008,-0.02839588142697217,-0.0932680359530846,true
+rsi-divergence,min-stop-10atr,Skip setups with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",2894,0.15342087076710437,-0.035510969691667275,-0.09021393373086063,true
+rsi-divergence,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",1468,0.1955040871934605,0.003610204564836774,-0.06351372315357341,true
+rsi-divergence,no-confirm,"Enter as soon as the divergence shows, no waiting for a close","{""confirm"": false}",7439,0.28202715418739077,0.009067288554693161,-0.19036218889938164,true
+rsi-divergence,rsi-zone,First swing's RSI under 30 (over 70 for bearish),"{""zone"": true}",715,0.13846153846153847,-0.012231533003338659,-0.0648743563897378,true
+rsi-divergence,min-rsi-diff-3,RSI must differ by at least 3 points,"{""min_rsi_diff"": 3.0}",2111,0.16674561819043107,-0.03973303042525622,-0.10360901629924762,true
+rsi-divergence,swing-5,Swings need 5 candles on each side,"{""swing_bars"": 5}",2704,0.14275147928994084,-0.019027087980682398,-0.07511522713221225,true
+rsi-divergence,longs-only,Bullish divergence only (longs),"{""sides"": ""long""}",1746,0.1718213058419244,-0.03621378331552887,-0.10341684357328791,true
+rsi-divergence,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",18446,0.1759731107015071,-0.0035880324293313453,-0.1616251251395484,true
+rsi-divergence,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",1199,0.16847372810675562,-0.046797337472401154,-0.08176253958754975,true
+rsi-divergence,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",293,0.12286689419795221,0.04125605071956901,0.026588422245678905,true
+supertrend,target-1r,Target 1x risk,"{""target_r"": 1.0}",9902,0.3843667945869521,-0.009186737627285975,-0.062198152956867966,true
+supertrend,target-3r,Target 3x risk,"{""target_r"": 3.0}",9902,0.06736012926681478,-0.0062201933829794205,-0.06227892537312572,true
+supertrend,exit-flip,No target: hold until the line flips back (stop stays at the entry line),"{""exit"": ""flip""}",9901,0.0,-0.0036361533609977808,-0.06047386533489918,true
+supertrend,min-stop-5atr,Skip flips with a stop under 5% of the typical daily move,"{""min_stop_atr"": 0.05}",9823,0.15606230275883132,-0.010002221696848456,-0.06504051392826234,true
+supertrend,min-stop-10atr,Skip flips with a stop under 10% of the typical daily move,"{""min_stop_atr"": 0.1}",9181,0.14943905892604292,-0.012046806836078281,-0.0635223168590633,true
+supertrend,trend-1h-200ema,Only trade with the 1-hour 200 EMA trend,"{""trend_filter"": true}",4563,0.16962524654832348,0.017225442086307104,-0.03891533665205235,true
+supertrend,tf-1m,1-minute candles,"{""timeframe_minutes"": 1}",57154,0.15279770444763272,-0.007544386570226608,-0.1517091835049559,true
+supertrend,tf-15m,15-minute candles,"{""timeframe_minutes"": 15}",3222,0.15735567970204842,-0.010391751746473603,-0.03904433546511309,true
+supertrend,tf-1h,1-hour candles,"{""timeframe_minutes"": 60}",746,0.10589812332439678,0.019983239723944356,0.007297584929166272,true
+supertrend,mult-2,"Multiplier 2 instead of 3 (tighter line, more flips)","{""multiplier"": 2.0}",17944,0.2266495764600981,-0.0054453323580306015,-0.08346923970257887,true
+supertrend,mult-4,"Multiplier 4 instead of 3 (wider line, fewer flips)","{""multiplier"": 4.0}",6340,0.10236593059936909,-0.013710187950020108,-0.05621607655328413,true
+supertrend,atr-7,ATR length 7 instead of 10,"{""atr_length"": 7}",9935,0.15108203321590338,-0.015702199085328487,-0.0716099996626037,true
+supertrend,confirm-candle,Wait one candle after the flip and enter only if it holds,"{""confirm"": true}",9866,0.18649908777620108,-0.013174860343943898,-0.07960581097624649,true
